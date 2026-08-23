@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Expansão da Graça | E-book 5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--deep:#031B4E;--navy:#062A66;--blue:#0A4FA3;--electric:#1677D2;--sky:#5BB8FF;--white:#fff;--muted:#B8C9E5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Montserrat,Arial,sans-serif;color:#10233f;background:#fff;line-height:1.6}
+.hero{min-height:760px;background:radial-gradient(circle at 78% 35%,#0c5dbb55 0,transparent 32%),linear-gradient(135deg,var(--deep),#020f2d 72%);color:#fff;display:flex;align-items:center;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-180px;top:-170px;background:#1677d21c;filter:blur(20px)}
+.container{width:min(1120px,92%);margin:auto}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center;position:relative;z-index:2}
+.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--sky);font-weight:700}
+h1{font-size:clamp(42px,6vw,70px);line-height:1.02;margin:18px 0;font-weight:800;letter-spacing:-2px}h1 span{color:#78c8ff}
+.lead{font-size:16px;color:#dce8f8;max-width:650px}.cta{display:inline-block;margin-top:25px;padding:16px 27px;border-radius:10px;background:linear-gradient(135deg,#2188e8,#0d5cb7);color:#fff;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.5px;box-shadow:0 12px 30px #00173580}
+.meta{display:flex;gap:24px;margin-top:25px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.book{width:min(330px,75vw);margin:auto;transform:rotate(3deg);filter:drop-shadow(0 30px 35px #0009)}
+.book-cover{aspect-ratio:2/3;background:linear-gradient(160deg,#0b63be,#031538 72%);border:1px solid #70bfff66;border-radius:4px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:inset 0 0 50px #02132e88}
+.book-cover small{font-size:9px;letter-spacing:2px;color:#a9d9ff;font-weight:700}.book-title{font-size:29px;line-height:1.03;font-weight:800}.book-sub{font-size:10px;color:#d7e8fa}.cross{font-size:56px;color:#8fd0ff;text-align:center;text-shadow:0 0 30px #4aaeff}
+section{padding:85px 0}.light{background:#f5f9ff}.dark{background:var(--deep);color:#fff}
+.section-title{text-align:center;font-size:34px;line-height:1.15;margin:0 auto 14px;font-weight:800;color:var(--deep)}.dark .section-title,.offer .section-title{color:#fff}
+.section-sub{text-align:center;max-width:780px;margin:0 auto 45px;font-size:12px;color:#61728c}.dark .section-sub{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #dbe8f8;border-radius:16px;padding:28px;box-shadow:0 12px 35px #062a6610}.dark .card{background:#062a66;border-color:#2874bd55;color:#fff}
+.icon{width:45px;height:45px;border-radius:12px;background:#e4f3ff;color:#0a4fa3;display:grid;place-items:center;font-size:20px;margin-bottom:18px}.card h3{font-size:15px;margin:0 0 8px}.card p{font-size:12px;color:#64748b;margin:0}.dark .card p{color:#bfd0e7}
+.chapters{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.chapter{padding:20px;border-left:3px solid var(--electric);background:#fff;border-radius:0 12px 12px 0;box-shadow:0 8px 25px #062a660c}.chapter strong{font-size:12px;color:var(--blue)}.chapter h3{margin:4px 0;font-size:15px;color:var(--deep)}.chapter p{font-size:12px;color:#66758a;margin:0}.dark .chapter{background:#062a66;border-left-color:var(--sky)}.dark .chapter strong{color:var(--sky)}.dark .chapter h3{color:#fff}.dark .chapter p{color:#bfd0e7}
+.author{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}.author-box{height:300px;border-radius:22px;background:linear-gradient(145deg,#0a4fa3,#031b4e);display:grid;place-items:center;color:#9fd7ff;font-size:80px}.author h2{font-size:34px;color:var(--deep);margin:0 0 12px}.author p,.author li{font-size:12px;color:#60718a}.author ul{padding-left:18px}
+.offer{background:linear-gradient(135deg,var(--deep),#073d86);color:#fff;text-align:center}.offer p{font-size:12px;color:#c7daf3}
+.faq{max-width:760px;margin:auto}.faq details{border-bottom:1px solid #dbe5f1;padding:17px 0}.faq summary{font-size:12px;font-weight:700;color:var(--deep);cursor:pointer}.faq p{font-size:12px;color:#64748b}
+footer{background:#020f2d;color:#90a9ca;padding:35px 0;text-align:center;font-size:11px}
+@media(max-width:800px){.hero{min-height:auto;padding:85px 0}.hero-grid,.author{grid-template-columns:1fr}.hero-copy{text-align:center}.lead{margin:auto}.meta{justify-content:center}.cards,.chapters{grid-template-columns:1fr}.book{margin-top:20px}section{padding:65px 0}.author-box{height:220px}h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<div class="eyebrow">E-book 5 · Série de Mensagens e Estudos no Livro de Atos</div>
+<h1>A Expansão <span>da Graça</span></h1>
+<p class="lead">O Evangelho sem fronteiras. Uma jornada por Atos 10 a 12 para compreender a Graça que alcança todos, romper barreiras culturais e formar uma igreja que ora, acolhe e avança.</p>
+<a class="cta" href="#oferta">QUERO MEU E-BOOK</a>
+<div class="meta"><span>✓ Atos 10–12</span><span>✓ Escola Bíblica</span><span>✓ Pequenos grupos</span></div>
+</div>
+<div class="book"><div class="book-cover">
+<small>E-BOOK 5</small>
+<div><div class="cross">✦</div><div class="book-title">A EXPANSÃO<br>DA GRAÇA</div></div>
+<div class="book-sub">E o Evangelho sem Fronteiras<br>Rev. Rodrigo Alexandre de Melo<br>Série de Mensagens e Estudos no Livro de Atos</div>
+</div></div>
+</div>
+</header>
+
+<section class="light"><div class="container">
+<h2 class="section-title">Quando a graça se expande,<br>as fronteiras caem.</h2>
+<p class="section-sub">Este e-book mostra como a Igreja Primitiva enfrentou barreiras culturais, religiosas e humanas, aprendendo a reconhecer o agir de Deus e levar o Evangelho a todos.</p>
+<div class="cards">
+<div class="card"><div class="icon">🌎</div><h3>Graça sem fronteiras</h3><p>Descubra como Deus mostrou a Pedro que o Evangelho não está limitado a um povo, cultura ou nação.</p></div>
+<div class="card"><div class="icon">🕊️</div><h3>Uma igreja guiada pelo Espírito</h3><p>Aprenda a reconhecer a voz de Deus, rever conceitos e obedecer quando o Espírito Santo aponta o próximo passo.</p></div>
+<div class="card"><div class="icon">🙏</div><h3>O poder de uma igreja que ora</h3><p>Veja em Atos 12 como a oração incessante da igreja se torna instrumento de livramento, fé e ação de Deus.</p></div>
+</div></div></section>
+
+<section class="dark"><div class="container">
+<h2 class="section-title">O que você encontrará<br>neste e-book?</h2>
+<p class="section-sub">Seis estudos que percorrem Atos 10 a 12 e confrontam a igreja com perguntas essenciais sobre graça, preconceito, identidade cristã, obediência e oração.</p>
+<div class="chapters">
+<div class="card chapter"><strong>CAPÍTULO 01 · ATOS 10:1–6</strong><h3>O Deus que Fala</h3><p>Deus fala para preparar pessoas, confrontar nossos limites, orientar passos concretos e conduzir sua Igreja ao cumprimento da missão.</p></div>
+<div class="card chapter"><strong>CAPÍTULO 02 · ATOS 10:34–35</strong><h3>O Deus que não faz Acepção de Pessoas</h3><p>Uma reflexão sobre a graça de Deus e a necessidade de uma igreja que enxerga pessoas para além de barreiras culturais e religiosas.</p></div>
+<div class="card chapter"><strong>CAPÍTULO 03 · ATOS 10:36–43</strong><h3>Quem é Jesus?</h3><p>Jesus é apresentado como o centro da mensagem: ungido pelo Espírito, Senhor, morto, ressuscitado e aquele em quem há perdão dos pecados.</p></div>
+<div class="card chapter"><strong>CAPÍTULO 04 · ATOS 11:17</strong><h3>Quando estamos resistindo a Deus?</h3><p>Pedro precisou reconhecer que Deus estava fazendo algo novo. O estudo confronta nossa tendência de limitar a obra de Deus aos nossos próprios conceitos.</p></div>
+<div class="card chapter"><strong>CAPÍTULO 05 · ATOS 11:19–30</strong><h3>Foram os Discípulos chamados Cristãos</h3><p>Antioquia revela uma comunidade em que os discípulos foram identificados com Cristo e a igreja cresceu em ensino, serviço, generosidade e missão.</p></div>
+<div class="card chapter"><strong>CAPÍTULO 06 · ATOS 12:5</strong><h3>O que acontece quando a Igreja ora?</h3><p>Uma igreja reunida em oração diante de uma crise aprende que Deus continua agindo, libertando e fortalecendo seu povo.</p></div>
+</div></div></section>
+
+<section><div class="container">
+<h2 class="section-title">Para quem quer estudar,<br>ensinar e transformar</h2>
+<p class="section-sub">O material foi desenvolvido para líderes, professores de Escola Bíblica e discípulos que desejam ver renovação em suas congregações, com conteúdo teológico e aplicações práticas.</p>
+<div class="cards">
+<div class="card"><div class="icon">📖</div><h3>Estudo bíblico</h3><p>Conteúdo fundamentado em Atos 10 a 12, com ensinamentos e aplicações para a vida cristã.</p></div>
+<div class="card"><div class="icon">👥</div><h3>Pequenos grupos</h3><p>Cada estudo inclui perguntas de reflexão e debate para estimular conversa, discernimento e prática.</p></div>
+<div class="card"><div class="icon">⛪</div><h3>Escola Bíblica</h3><p>Um recurso para professores e líderes conduzirem a igreja a uma compreensão mais profunda da missão e da graça.</p></div>
+</div></div></section>
+
+<section class="light"><div class="container author">
+<div class="author-box">✝️</div>
+<div><h2>Sobre o autor</h2><h3 style="color:#0a4fa3;font-size:16px">Rev. Rodrigo Alexandre de Melo</h3>
+<p>Pastor desde 2000, ordenado a Reverendo em 2006 e membro da Igreja do Nazareno desde 1994. Atua no ministério pastoral há mais de vinte e cinco anos, com experiência como pastor titular e plantador de igrejas em diversas regiões do Brasil.</p>
+<ul><li>Bacharelado em Teologia</li><li>Pós-graduação em Pregação Bíblica</li><li>Pós-graduação em Gestão Estratégica de Pessoas</li><li>MBA em Gestão Estratégica de Negócios</li></ul>
+<p>Seu ministério é marcado pelo compromisso com evangelismo, discipulado, cuidado pastoral e desenvolvimento de liderança, em alinhamento com a Doutrina de Santidade Wesleyana e os Artigos de Fé da Igreja do Nazareno.</p>
+</div></div></section>
+
+<section class="offer" id="oferta"><div class="container">
+<h2 class="section-title">Deixe a graça atravessar fronteiras</h2>
+<p>Tenha acesso ao <strong>E-book 5 — A Expansão da Graça e o Evangelho sem Fronteiras</strong> e leve para sua igreja uma jornada de estudo sobre Atos 10 a 12, oração, missão e uma comunidade sem preconceitos.</p>
+<a class="cta" href="#link-do-checkout-aqui" target="_blank" rel="noopener noreferrer">QUERO MEU E-BOOK</a>
+<p style="margin-top:18px">Substitua o link acima pelo endereço da sua página de checkout.</p>
+</div></section>
+
+<section><div class="container faq"><h2 class="section-title">Perguntas frequentes</h2>
+<details><summary>O e-book é digital?</summary><p>Sim. O material é apresentado como e-book digital e faz parte de uma série de cinco obras para edificação da Igreja.</p></details>
+<details><summary>Em quais textos bíblicos o conteúdo é baseado?</summary><p>O e-book trabalha principalmente os capítulos 10 a 12 do livro de Atos.</p></details>
+<details><summary>O material serve para Escola Bíblica e Pequenos Grupos?</summary><p>Sim. Os capítulos contam com guias de reflexão e debate voltados para Escola Bíblica e Grupos Pequenos.</p></details>
+<details><summary>Qual é a principal proposta do E-book 5?</summary><p>Consolidar uma visão da Graça Preveniente, da oração incessante e de uma igreja sem preconceitos, mostrando o avanço do Evangelho para além das fronteiras culturais e religiosas.</p></details>
+</div></section>
+
+<footer><div>Raízes da Palavra · E-book 5</div><div style="margin-top:8px;">A Expansão da Graça e o Evangelho sem Fronteiras</div></footer>
+</body></html>
